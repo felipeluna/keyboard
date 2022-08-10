@@ -1,5 +1,5 @@
 /*
-Copyright 2021 Jeremy Herve <jeremy@jeremy.hu>
+Copyright 2021 Tyler Tolley <thattolleyguy@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -17,30 +17,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-/* Change the default tapping toggle value (normally 5) */
-#define TAPPING_TOGGLE 2
-
 /* Use I2C or Serial, not both */
 #define USE_SERIAL
-//#define USE_I2C
 
 /* Select hand configuration */
-#define MASTER_LEFT
-// #define MASTER_RIGHT
-// #define EE_HANDS
+// #define MASTER_LEFT
+#define EE_HANDS
 
 #undef RGBLED_NUM
-//#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 14
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
-#define RGBLIGHT_SLEEP
-
-/* Set Unicode mode by default */
-#define UNICODE_SELECTED_MODES UC_MAC
-
-/* Custom startup sound */
-#ifdef AUDIO_ENABLE
-#    define STARTUP_SONG SONG(ZELDA_PUZZLE)
-#endif
+#undef RGB_DI_PIN
+#define RGB_DI_PIN C6
+#define RGBLED_NUM 14    // Number of LEDs
+#define RGBLED_SPLIT { 7, 7 }
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_KNIGHT
+#define RGBLIGHT_EFFECT_CHRISTMAS
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#define RGBLIGHT_EFFECT_RGB_TEST
+#define RGBLIGHT_EFFECT_ALTERNATING
+#define RGBLIGHT_EFFECT_TWINKLE

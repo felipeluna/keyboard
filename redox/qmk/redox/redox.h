@@ -16,8 +16,5 @@
 
 #pragma once
 
-#ifdef KEYBOARD_redox_rev1
-    #include "rev1.h"
-#endif
-
+#include "rev1.h"
 #include "quantum.h"
